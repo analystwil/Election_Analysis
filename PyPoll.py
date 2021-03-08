@@ -57,4 +57,10 @@ for candidate_name in candidate_votes:
          winning_percentage = vote_percentage
          # And, set the winning_candidate equal to the candidate's name(which is the variable).
          winning_candidate = candidate_name
-
+winning_candidate_summary = (
+    f"-------------------------\n"
+    f"Winner: {winning_candidate}\n"
+    f"Winning Vote Count: {winning_count:,}\n"
+    f"Winning Percentage: {winning_percentage:.1f}%\n"
+    f"-------------------------\n")
+print(winning_candidate_summary)
